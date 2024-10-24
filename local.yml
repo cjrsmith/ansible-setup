@@ -17,3 +17,4 @@
     - include: tasks/ssh.yml
     - include: tasks/git.yml
     - include: tasks/zsh.yml
+    - include: tasks/nvim.yml

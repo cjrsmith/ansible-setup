@@ -1,0 +1,3 @@
+- name: Install nvim 
+  apt: name=nvim
+  tags: &tags_for_zsh_tasks [ 'install', 'productivity', 'dotfiles', 'nvim' ]
