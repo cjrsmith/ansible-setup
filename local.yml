@@ -18,3 +18,4 @@
     - include: tasks/git.yml
     - include: tasks/zsh.yml
     - include: tasks/nvim.yml
+    - include: tasks/core.yml
