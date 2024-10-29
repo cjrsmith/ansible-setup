@@ -12,3 +12,11 @@
   tags:
     - install
     - core
+- name: Install neovim dependencies
+  become: true
+  apt:
+    name: ["build-essential", "ninja-build", "gettext", "cmake", "curl", "unzip"]
+  tags:
+    - install
+    - core
+    - neovim
