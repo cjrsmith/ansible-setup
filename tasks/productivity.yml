@@ -1,7 +1,7 @@
 - name: Install packages
   become: true
   apt:
-    name: [ "tmux", "fzf", "xclip", "tldr", "ripgrep" ]
+    name: [ "tmux", "fzf", "xclip", "tldr", "ripgrep", "fd-find" ]
   tags:
     - install
     - productivity
