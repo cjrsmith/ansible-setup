@@ -15,7 +15,7 @@
 - name: Install neovim dependencies
   become: true
   apt:
-    name: ["build-essential", "ninja-build", "gettext", "cmake", "curl", "unzip", "python3.10-venv", "feh"]
+    name: ["build-essential", "ninja-build", "gettext", "cmake", "curl", "unzip", "python3.10-venv", "feh", "compton"]
   tags:
     - install
     - core
