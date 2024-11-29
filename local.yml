@@ -19,4 +19,5 @@
     - include: tasks/git.yml
     - include: tasks/zsh.yml
     - include: tasks/nvim.yml
+    - include: tasks/node.yml
     - include: tasks/dotfiles.yml
