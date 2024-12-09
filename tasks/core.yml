@@ -5,10 +5,17 @@
   tags:
     - install
     - core
+- name: Install i3blocks 
+  become: true
+  apt:
+    name=i3blocks 
+  tags:
+    - install
+    - core
 - name: Install system packages
   become: true
   apt:
-    name: ["blueman", "arandr", "autorandr"]
+    name: ["blueman", "arandr", "autorandr", "pavucontrol", "playerctl"]
   tags:
     - install
     - core

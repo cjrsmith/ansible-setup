@@ -23,3 +23,12 @@
     repo: 'https://github.com/zsh-users/zsh-autosuggestions.git'
     dest: "~/.oh-my-zsh/custom/plugins/zsh-autosuggestions"
   tags: *tags_for_zsh_tasks
+
+- name: Install Starship
+  become: true
+  shell: sh -c "$(curl -sS https://starship.rs/install.sh)" -y -f
+  tags: *tags_for_zsh_tasks
+  
+- name: Install starship gruvbox theme
+  shell: starship preset gruvbox-rainbow -o ~/.config/starship.toml
+  tags: *tags_for_zsh_tasks
