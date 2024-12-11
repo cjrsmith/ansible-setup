@@ -5,6 +5,7 @@
   tags:
     - install
     - core
+
 - name: Install i3blocks 
   become: true
   apt:
@@ -12,13 +13,22 @@
   tags:
     - install
     - core
+
 - name: Install system packages
   become: true
   apt:
-    name: ["blueman", "arandr", "autorandr", "pavucontrol", "playerctl"]
+    name: ["blueman", "arandr", "autorandr", "pavucontrol", "playerctl", "brightnessctl"]
   tags:
     - install
     - core
+
+- name: Change brightnessctl permissions 
+  become: true
+  shell: chmod +s $(which brightnessctl) 
+  tags:
+    - install
+    - core
+
 - name: Install neovim dependencies
   become: true
   apt:
@@ -27,6 +37,7 @@
     - install
     - core
     - neovim
+
 - name: Install utilities 
   become: true
   apt:
