@@ -1,0 +1,13 @@
+- name: Fetch LazyGit
+  shell: install-lazygit.sh
+  tags:
+    - install
+    - lazy
+
+- name: Install LazyGit
+  become: true
+  shell: install lazygit -D -t /usr/local/bin/ 
+  tags:
+    - install
+    - lazy
+
