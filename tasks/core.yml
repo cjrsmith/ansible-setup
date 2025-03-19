@@ -41,7 +41,7 @@
 - name: Install utilities 
   become: true
   apt:
-    name: ["feh", "compton", "maim"]
+    name: ["feh", "compton", "maim", "lxappearance"]
   tags:
     - install
     - core
