@@ -1,14 +1,14 @@
-- name: Git personal setup email
+- name: Git work setup email
   git_config:
     name: user.email
     scope: global
-    value: "connorsmith5111@googlemail.com"
+    value: "connor.smith@pinepeak.co.uk"
   tags:
-  - git-personal
-- name: Git personal setup name
+  - git
+- name: Git work setup name
   git_config:
     name: user.name
     scope: global
     value: "CSmith"
   tags:
-  - git-personal
+  - git
