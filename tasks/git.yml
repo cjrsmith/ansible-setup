@@ -12,17 +12,3 @@
     value: "CSmith"
   tags:
   - git-personal
-- name: OQC
-  git_config:
-    name: user.email
-    scope: global
-    value: "csmith@oxfordquantumcircuits.com"
-  tags:
-  - git-oqc
-- name: Git personal setup name
-  git_config:
-    name: user.name
-    scope: global
-    value: "CSmith"
-  tags:
-  - git-oqc
