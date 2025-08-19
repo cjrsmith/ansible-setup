@@ -1,5 +1,5 @@
 - name: Fetch LazyGit
-  shell: ../install-lazygit.sh
+  shell: ~/ansible-setup/install-lazygit.sh
   tags:
     - install
     - lazy
