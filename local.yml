@@ -1,8 +1,4 @@
 - hosts: localhost
-  vars:
-    source_key: "./.ssh/id_ed25519"
-    dest_key: "{{ lookup('env', 'HOME') }}/.ssh/id_ed25519"
-    personal: "{{ lookup('env', 'HOME') }}/personal"
   pre_tasks:
   - name: Update Apt
     become: true
@@ -20,4 +16,5 @@
     - include_tasks: tasks/nvim.yml
     - include_tasks: tasks/productivity.yml
     - include_tasks: tasks/node.yml
+    - include_tasks: tasks/lazy-git.yml
     - include_tasks: tasks/dotfiles.yml
