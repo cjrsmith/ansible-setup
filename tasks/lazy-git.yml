@@ -1,5 +1,5 @@
 - name: Fetch LazyGit
-  shell: install-lazygit.sh
+  shell: ../install-lazygit.sh
   tags:
     - install
     - lazy
