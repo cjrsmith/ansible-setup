@@ -17,4 +17,5 @@
     - include_tasks: tasks/productivity.yml
     - include_tasks: tasks/node.yml
     - include_tasks: tasks/lazy-git.yml
+    - include_tasks: tasks/opencode.yml
     - include_tasks: tasks/dotfiles.yml

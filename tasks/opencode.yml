@@ -1,0 +1,3 @@
+- name: Installing Opencode
+  shell: curl -fsSL https://opencode.ai/install | bash
+  become: true
